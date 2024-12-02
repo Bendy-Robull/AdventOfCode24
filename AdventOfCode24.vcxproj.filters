@@ -26,13 +26,16 @@
     <ClInclude Include="days\day_1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="days\day_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="real_inputs\day1_1.txt" />
     <Text Include="test_inputs\day1_1.txt" />
+    <Text Include="real_inputs\day1_1.txt" />
   </ItemGroup>
 </Project>
