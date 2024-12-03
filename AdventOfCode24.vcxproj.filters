@@ -14,4 +14,30 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="days\day_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="days\day_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test_inputs\day1_1.txt" />
+    <Text Include="real_inputs\day1_1.txt" />
+    <Text Include="real_inputs\day2_1.txt" />
+    <Text Include="test_inputs\day2_1.txt" />
+  </ItemGroup>
 </Project>
