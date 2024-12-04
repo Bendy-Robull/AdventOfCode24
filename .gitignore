@@ -361,6 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/~AutoRecover.AdventOfCode24.vcxproj
-/~AutoRecover.AdventOfCode24.vcxproj0
-/~AutoRecover.AdventOfCode24.vcxproj1
+
+~AutoRecover.AdventOfCode24.vcxproj*

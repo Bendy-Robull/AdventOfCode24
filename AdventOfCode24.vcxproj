@@ -130,6 +130,7 @@
     <ClInclude Include="Source\days\Day.h" />
     <ClInclude Include="Source\days\day_1.h" />
     <ClInclude Include="Source\days\day_2.h" />
+    <ClInclude Include="Source\days\day_3.h" />
     <ClInclude Include="Source\pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +140,7 @@
   <ItemGroup>
     <Text Include="Resources\real_inputs\day1_1.txt" />
     <Text Include="Resources\real_inputs\day2_1.txt" />
+    <Text Include="Resources\real_inputs\day3_1.txt" />
     <Text Include="Resources\test_inputs\day1_1.txt" />
     <Text Include="Resources\test_inputs\day2_1.txt" />
   </ItemGroup>
