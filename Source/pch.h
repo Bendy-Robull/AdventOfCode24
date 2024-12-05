@@ -17,6 +17,6 @@
 #include "days/day_2.h";
 #include "days/day_3.h";
 #define CURRENT_DAY 3
-#define CURRENT_PART 1
+#define CURRENT_PART 2
 #define TEST_DATA false
 

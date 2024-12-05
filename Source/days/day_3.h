@@ -28,5 +28,36 @@ public:
 		inputFile.close();
 		std::cout << mulSum << std::endl;
 	};
-	void partTwo() override {};
+	void partTwo() override {
+		std::ifstream inputFile("Resources/real_inputs/day3_1.txt");
+		std::string line;
+		int mulSum = 0;
+		bool doCount = true;
+		std::regex exp("mul\\(\\d{1,3},\\d{1,3}\\)|do\\(\\)|don\\'t\\(\\)");
+		while (getline(inputFile, line)) {
+			std::vector<std::string> tokens(std::sregex_token_iterator{ begin(line),end(line),exp,0 }, std::sregex_token_iterator{});
+			std::cout << tokens.size() << std::endl;
+			for (std::string& mul : tokens) {
+				//std::cout << mul << std::endl;
+				if (mul.find("mul") != std::string::npos && doCount)
+				{
+					//std::cout<<"Mulling"<<std::endl;
+				std::regex numreg("\\d{1,3}");
+				std::vector<std::string> numtokens(std::sregex_token_iterator{ begin(mul),end(mul),numreg,0 }, std::sregex_token_iterator{});
+				std::list<int> numbers;
+				std::for_each(numtokens.begin(), numtokens.end(), [&numbers](std::string num) {numbers.push_back(std::stoi(num)); });
+				mulSum += numbers.front() * numbers.back();
+				}
+				else if (mul == "do()") {
+					doCount = true;
+				}
+				else {
+					doCount = false;
+				}
+				//std::cout<<mulSum<<std::endl;
+			}
+		}
+		inputFile.close();
+		std::cout << mulSum << std::endl;
+	};
 };
